@@ -280,3 +280,9 @@ mark.todo{background:var(--sunshine);color:var(--navy);border-radius:var(--radiu
 .card-actions{display:flex;flex-wrap:wrap;gap:var(--space-5);align-items:center;margin-top:auto;padding-top:var(--space-4)}
 .audience-card{display:flex;flex-direction:column;gap:var(--space-4);padding:var(--space-7)}
 @media (max-width:720px){.audience-card{padding:var(--space-5)}}
+
+/* County list (home, Where we work) */
+.county-list{list-style:none;padding:0;margin:0;columns:6;column-gap:var(--space-5)}
+.county-list li{margin:0 0 var(--space-1);break-inside:avoid}
+@media (max-width:1000px){.county-list{columns:4}}
+@media (max-width:720px){.county-list{columns:2}}

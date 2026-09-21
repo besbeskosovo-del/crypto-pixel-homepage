@@ -37,7 +37,7 @@ const privacy = legalPage('privacy', 'Privacy policy',
   <h2 class="lh-h3">Cookies and analytics</h2>
   <p>This site does not use third party marketing scripts. [CONFIRM: list any analytics tool the owners add, or state that none is used.]</p>
   <h2 class="lh-h3">Your choices</h2>
-  <p>Ask us what we have about you, ask us to correct it, or ask us to delete it. Call [MAIN PHONE] or email hello@littleheartshc.com [CONFIRM].</p>
+  <p>Ask us what we have about you, ask us to correct it, or ask us to delete it. Call [MAIN PHONE] or email hello@littleheartshc.com.</p>
   <h2 class="lh-h3">Contact</h2>
   <p>Little Hearts HC, LLC, [STREET], [CITY], GA [ZIP]. Phone [MAIN PHONE].</p>
   <h2 class="lh-h3">Effective date</h2>
@@ -67,7 +67,7 @@ const accessibility = legalPage('accessibility', 'Accessibility statement',
   'Little Hearts Home Care built this site to WCAG 2.2 AA. If something doesn’t work for you, tell us and we’ll fix it or help you another way.',
   `
   <p>Little Hearts Home Care wants every family to be able to use this site. We built it to WCAG 2.2 AA: keyboard navigation, visible focus, text contrast, labels on every form field, alt text on images, and reduced motion when your device asks for it.</p>
-  <p>If something doesn’t work for you, call [MAIN PHONE] or email hello@littleheartshc.com [CONFIRM EMAIL] and we’ll fix it or help you another way.</p>
+  <p>If something doesn’t work for you, call [MAIN PHONE] or email hello@littleheartshc.com and we’ll fix it or help you another way.</p>
   <p>Last reviewed: [date].</p>`);
 
 const nondiscrimination = legalPage('nondiscrimination', 'Nondiscrimination notice',
@@ -83,7 +83,7 @@ const nondiscrimination = legalPage('nondiscrimination', 'Nondiscrimination noti
   <p lang="zh">注意：如果您使用繁體中文，您可以免費獲得語言援助服務。請致電 [MAIN PHONE]。</p>
   <p>[CONFIRM: taglines for the remaining top languages for Georgia per HHS guidance.]</p>
   <h2 class="lh-h3">How to file a grievance</h2>
-  <p>If you believe we have failed to provide these services or discriminated in another way, you can file a grievance with us: Little Hearts HC, LLC, [STREET], [CITY], GA [ZIP], phone [MAIN PHONE], email hello@littleheartshc.com [CONFIRM]. You can file in person, by mail, by fax or by email. We can help you file.</p>
+  <p>If you believe we have failed to provide these services or discriminated in another way, you can file a grievance with us: Little Hearts HC, LLC, [STREET], [CITY], GA [ZIP], phone [MAIN PHONE], email hello@littleheartshc.com. You can file in person, by mail, by fax or by email. We can help you file.</p>
   <p>You can also file a civil rights complaint with the U.S. Department of Health and Human Services, Office for Civil Rights, at ocrportal.hhs.gov, or by mail: U.S. Department of Health and Human Services, 200 Independence Avenue SW, Room 509F, HHH Building, Washington, DC 20201, or by phone: 1-800-368-1019 (TDD 1-800-537-7697).</p>`);
 
 module.exports = [privacy, terms, accessibility, nondiscrimination];

@@ -22,17 +22,17 @@ function thanksPage(path, title, heading, bodyHtml) {
 const thanksRequest = thanksPage('/thanks-request-care',
   'Request received · Little Hearts Home Care',
   'Thank you.',
-  `One of the three owners will call you [CONFIRM: by the next business day]. If your child is in the hospital and going home soon, call <a class="lh-link" href="${S.TEL_HREF}">${S.MAIN_PHONE}</a> now.`);
+  `An owner will call you, usually by the next business day. If your child is in the hospital and going home soon, call <a class="lh-link" href="${S.TEL_HREF}">${S.MAIN_PHONE}</a> now.`);
 
 const thanksRefer = thanksPage('/thanks-refer-a-patient',
   'Referral received · Little Hearts Home Care',
   'Received.',
-  `An owner will call you [CONFIRM: within one business day]. For a discharge this week, call <a class="lh-link" href="${S.TEL_HREF}">${S.MAIN_PHONE}</a> instead of waiting.`);
+  `An owner will call you within one business day. For a discharge this week, call <a class="lh-link" href="${S.TEL_HREF}">${S.MAIN_PHONE}</a> instead of waiting.`);
 
 const thanksApply = thanksPage('/thanks-apply',
   'Application received · Little Hearts Home Care',
   'Thanks.',
-  `[Owner, clinical lead] reviews every application personally and will call you [CONFIRM: within two business days].`);
+  `We review every application personally and will call you within a couple of business days.`);
 
 const notFound = {
   path: '/404.html',

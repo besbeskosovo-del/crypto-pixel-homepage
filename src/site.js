@@ -79,26 +79,20 @@ const GAPP_STEPS = [
 const FAQ_PREVIEW = [
   ['Do we really pay nothing?', 'If your child qualifies for GAPP, Georgia Medicaid pays for our nursing. You pay nothing out of pocket for it.'],
   ['How many hours will we get?', 'Georgia Medicaid decides that, not us. We’ll help you ask for what your child’s doctor orders.'],
-  ['Who do I call at night?', 'Any of the three owners. You’ll have all our cell numbers from day one. [CONFIRM after hours policy]'],
+  ['Who do I call at night?', 'You’ll reach an owner, not an answering service. We go over after hours contact with you at the first visit.'],
   ['What if our nurse can’t make a shift?', 'We’ll tell you as soon as we know, and we’ll tell you what we’re doing to fill it.'],
 ];
 
 const PROOF_STRIP = `
 <div class="proof-strip">
   <div class="inner">
-    <p><b>Owner operated.</b> Three owners. You have all three numbers.</p>
+    <p><b>Owner operated.</b> When you call, you reach the people who run the agency.</p>
     <p><b>No out of pocket cost.</b> For families whose children qualify for GAPP.</p>
     <p><b>Children under 21.</b> Medically complex kids, newborns to young adults.</p>
   </div>
 </div>`;
 
 const TRUST_LINE = `Georgia licensed private home care provider [LICENSE NUMBER] &middot; Enrolled GAPP provider [CONFIRM] &middot; Nurses screened, trained and supervised by an RN`;
-
-const OWNERS = [
-  ['[Owner 1 name], [credential]', 'Clinical questions, care plans, nurses.', '[phone]'],
-  ['[Owner 2 name], [credential]', 'GAPP paperwork and Medicaid.', '[phone]'],
-  ['[Owner 3 name], [credential]', 'Scheduling and staffing.', '[phone]'],
-];
 
 const DISCLAIMER = 'Georgia Medicaid decides who qualifies for the Georgia Pediatric Program (GAPP), which services are covered and how many hours are approved. Nothing on this site is a promise of approval or hours. Talk to your child’s doctor about medical decisions. If your child is having an emergency, call 911.';
 
@@ -112,7 +106,7 @@ function ctaBand(variant = 'standard') {
   } else if (variant === 'careers') {
     heading = 'One child, one family, one shift at a time.';
     button = btn('Apply', '/careers#apply');
-    secondary = `Or call [OWNER, clinical lead] directly at [PHONE]`;
+    secondary = '';
   } else if (variant === 'phone-only') {
     heading = 'Talk to an owner today.';
     lead = 'We’ll tell you plainly what we can do.';
@@ -136,6 +130,6 @@ function ctaBand(variant = 'standard') {
 
 module.exports = {
   SITE_URL, MAIN_PHONE, FAX, TEL_HREF, NAV, SERVICES, servicesGrid,
-  GAPP_STEPS, FAQ_PREVIEW, PROOF_STRIP, TRUST_LINE, OWNERS, DISCLAIMER, ctaBand,
+  GAPP_STEPS, FAQ_PREVIEW, PROOF_STRIP, TRUST_LINE, DISCLAIMER, ctaBand,
   stepGrid, faqGrid,
 };

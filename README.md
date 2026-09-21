@@ -47,7 +47,7 @@ Everything the owners must supply is written as `[square brackets]` in the sourc
 
 ## How to add a Spanish page
 
-The `/es/*` routes are built from the English page modules in `src/pages/08-es.js`, with a "translation pending" notice and `noindex`. When an approved human translation exists for a page: replace that page's `body` in `08-es.js` with the translated HTML, set `lang: 'es'`, remove the notice and the `noindex` flag. Keep "GAPP" and "Georgia Medicaid" untranslated, and keep the `hreflang` pairing (already generated for both language versions).
+Spanish routes are currently omitted (per the owners' request, until a human translation reviewed by a native speaker exists). To add them back, create `src/pages/08-es.js` exporting page objects that mirror the English ones with translated `body`, `lang: 'es'` and paired `hreflang` links; keep "GAPP" and "Georgia Medicaid" untranslated.
 
 ## Rules the build enforces
 

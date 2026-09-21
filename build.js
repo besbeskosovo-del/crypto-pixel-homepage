@@ -53,7 +53,6 @@ function mobilePanel() {
     ${groups}
     <div class="mobile-panel__links">
       <a href="/contact">Contact</a>
-      <a href="/es" lang="es">Espa&ntilde;ol</a>
     </div>
   </div>`;
 }
@@ -101,8 +100,6 @@ function breadcrumbs(page) {
 }
 
 function footer() {
-  const ownerLines = S.OWNERS.map(([name, what, phone]) =>
-    `<p>${name}: ${phone}. ${what}</p>`).join('');
   const col = (heading, links) => `<div>
     <h2>${heading}</h2>
     <ul>${links.map(([label, href, lang]) => `<li><a class="lh-link lh-link--inverse" href="${href}"${lang ? ` lang="${lang}"` : ''}>${label}</a></li>`).join('')}</ul>
@@ -115,14 +112,12 @@ function footer() {
           <img src="/assets/derived/footer-logo-white.png" alt="Little Hearts Home Care" width="180" height="158" loading="lazy">
         </picture></p>
         <p class="footer-tagline">Skilled pediatric nursing at home for children under 21 in Georgia.</p>
-        <div class="footer-owners lh-small">${ownerLines}</div>
       </div>
       ${col('Families', [
         ['How it works', '/families/how-it-works'],
         ['GAPP and eligibility', '/families/gapp'],
         ['Request care', '/families/request-care'],
         ['Questions parents ask', '/resources/faq'],
-        ['Español', '/es', 'es'],
       ])}
       ${col('Professionals', [
         ['Refer a patient', '/physicians/refer'],
@@ -132,7 +127,7 @@ function footer() {
       ])}
       <div>
         <h2>Contact</h2>
-        <p>Main: ${S.MAIN_PHONE}<br>Fax: ${S.FAX}<br>Email: hello@littleheartshc.com [CONFIRM mailbox]<br>Office: [STREET], [CITY], GA [ZIP]</p>
+        <p>Main: ${S.MAIN_PHONE}<br>Fax: ${S.FAX}<br>Email: hello@littleheartshc.com<br>Office: [STREET], [CITY], GA [ZIP]</p>
         <p class="mt-3">We answer the phone [CONFIRM hours].</p>
       </div>
       <p class="footer-bottom">&copy; 2026 Little Hearts HC, LLC &middot; littleheartshc.com &middot;

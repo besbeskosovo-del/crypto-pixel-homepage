@@ -29,7 +29,7 @@ const PAGES = [
     whoFor: 'Children under 21 with a documented need for skilled nursing at home. Common examples: ventilator or oxygen dependence, tracheostomy, feeding tube, seizure disorders, complex medication schedules, and children coming home after a long hospital stay.',
     faqs: [
       ['How many hours can we get?', 'Georgia Medicaid decides hours from what your child’s doctor documents. We can’t promise a number. We can make sure the request shows everything your child needs.'],
-      ['Can we choose nights?', 'Yes. Tell us the hours that matter most and we’ll staff toward them. [CONFIRM]'],
+      ['Can we choose nights?', 'Yes. Tell us the hours that matter most and we’ll staff toward them.'],
       ['Will it be the same nurse?', 'We keep the same nurses on a case as long as we can. When someone new is coming, we tell you first.'],
     ],
   },
@@ -44,7 +44,7 @@ const PAGES = [
       'Oral and nasal suction as ordered',
       'Oxygen delivery and flow checks',
       'Nebulizer and inhaled medication treatments',
-      'Airway clearance: chest PT, vest, cough assist [CONFIRM equipment supported]',
+      'Airway clearance as ordered: chest PT, vest, cough assist',
       'Continuous or spot pulse oximetry, with your child’s alarm limits',
       'Signs of trouble: work of breathing, color, secretions, fever; escalation to your doctor',
     ],
@@ -71,8 +71,8 @@ const PAGES = [
     ],
     whoFor: 'Children who depend on a ventilator at home full time or part time, including nighttime only, with a tracheostomy or noninvasive interface. Often children coming home from a long NICU or PICU stay.',
     faqs: [
-      ['Which ventilators do your nurses know?', '[CONFIRM: list models, for example Trilogy, Astral, LTV.] If your child uses one we haven’t staffed, we train on it with your supplier before we start.'],
-      ['What if the power goes out?', 'Your plan of care includes battery, backup and 911 steps. We review it with you at the first visit and we practice it. [CONFIRM]'],
+      ['Are your nurses trained on my child’s ventilator?', 'Every nurse on a vent case is checked on your child’s specific ventilator before the first shift. If your child uses equipment we haven’t staffed, we train on it with your supplier before we start.'],
+      ['What if the power goes out?', 'Your plan of care includes battery, backup and 911 steps. We review it with you at the first visit.'],
     ],
   },
   {
@@ -93,7 +93,7 @@ const PAGES = [
     whoFor: 'Children who get some or all of their nutrition through a feeding tube: NG, G tube, GJ tube or J tube, on continuous, overnight or bolus schedules.',
     faqs: [
       ['Can the nurse change the formula?', 'No. Formula, rate and volume are your doctor’s or dietitian’s orders. If something isn’t working, we document it and call them.'],
-      ['Do you handle blended diets?', '[CONFIRM policy on blenderized feeds.]'],
+      ['Do you handle blended diets?', 'Ask us. We follow the feeding plan your doctor or dietitian orders, and we’ll talk it through on your child’s case.'],
     ],
   },
   {
@@ -113,7 +113,7 @@ const PAGES = [
     ],
     whoFor: 'Children with a gastrostomy tube or button, whether newly placed or long standing, including children who also have a fundoplication or GJ tube.',
     faqs: [
-      ['The button came out. What do we do?', 'Your plan of care has the steps and the timeline, and your nurse knows them. If your nurse isn’t there, call your doctor’s line first and us second. Time matters, so the plan is on your fridge. [CONFIRM]'],
+      ['The button came out. What do we do?', 'Your plan of care has the steps and the timeline, and your nurse knows them. If your nurse isn’t there, call your doctor’s line first and us second. Time matters, so the plan is on your fridge.'],
       ['Can you teach a grandparent or sibling?', 'Yes, anyone who cares for your child at home. Ask us.'],
     ],
   },
@@ -129,14 +129,14 @@ const PAGES = [
       'Suctions as needed and as ordered',
       'Cleans the stoma and checks the skin',
       'Tie changes on schedule, with a second person when required',
-      'Routine trach changes as ordered [CONFIRM: RN only or LPN with competency]',
+      'Routine trach changes as ordered, by a nurse with shown trach competency',
       'Humidification and HME management',
       'Signs of trouble: plugging, bleeding, breakdown, decannulation, and what to do',
     ],
     whoFor: 'Children with a tracheostomy, with or without a ventilator, including children going home with a new trach for the first time.',
     faqs: [
-      ['Do you send nurses on the day we come home from the hospital?', 'When we can, yes. Tell us the discharge date as early as you can and we’ll work the schedule around it. Hospital discharges get priority on our calendar. [CONFIRM]'],
-      ['Are your nurses trained on trach changes?', 'Every nurse on a trach case shows competency on trach care before the first shift. Routine trach changes follow your doctor’s order and our policy. [CONFIRM]'],
+      ['Do you send nurses on the day we come home from the hospital?', 'When we can, yes. Tell us the discharge date as early as you can and we’ll work the schedule around it. Hospital discharges get priority on our calendar.'],
+      ['Are your nurses trained on trach changes?', 'Every nurse on a trach case shows competency on trach care before the first shift. Routine trach changes follow your doctor’s order and our policy.'],
     ],
   },
   {
@@ -156,8 +156,8 @@ const PAGES = [
     ],
     whoFor: 'Children with complex medication schedules, seizure rescue plans, or medications that need monitoring, and families who want one accurate list everyone works from.',
     faqs: [
-      ['Can the nurse pick up prescriptions?', '[CONFIRM policy.]'],
-      ['What about controlled substances at home?', 'We count and document them by policy, and we’ll walk you through the storage rules. [CONFIRM]'],
+      ['Can the nurse pick up prescriptions?', 'Ask us when we set up your child’s case. Our job is to make sure a dose is never missed while we work out the details with you.'],
+      ['What about controlled substances at home?', 'We count and document them by policy, and we’ll walk you through the storage rules.'],
     ],
   },
   {
@@ -177,8 +177,8 @@ const PAGES = [
     ],
     whoFor: 'Every family we serve. Care coordination isn’t an add on; it is part of how we run a case.',
     faqs: [
-      ['Is care coordination billed separately?', 'No. It’s part of running your child’s case. [CONFIRM]'],
-      ['Who is my point of contact?', '[Owner 2 name] for paperwork and Medicaid, [Owner 1 name] for clinical questions, [Owner 3 name] for scheduling. All three numbers are yours.'],
+      ['Is care coordination billed separately?', 'No. It’s part of running your child’s case.'],
+      ['Who is my point of contact?', 'We’re owner operated, so the person you reach can actually decide things: clinical questions, paperwork and Medicaid, or scheduling. One call covers all of it.'],
     ],
   },
 ];
@@ -239,14 +239,14 @@ const index = {
     H.section(`<h2 class="visually-hidden">The eight services</h2>` + S.servicesGrid(), { white: true, label: 'All services' }),
     H.section(
       `<h2 class="lh-h2">Before the first shift</h2><div class="mt-6">${H.stepGrid([
-        ['An RN visits', 'An RN visits your home, reads the orders and writes the plan of care with you. [CONFIRM RN assessment]'],
+        ['An RN visits', 'An RN visits your home, reads the orders and writes the plan of care with you.'],
         ['We match nurses', 'We match nurses to your child’s equipment and schedule, and check their competency on your setup.'],
-        ['An owner is there', 'An owner is at the first shift. You have all three numbers.'],
+        ['An owner is there', 'An owner comes to the first shift, and you’ll have a direct line from day one.'],
       ], 3)}</div>`,
       { label: 'How a case starts' }),
     H.section(
       `<h2 class="lh-h2">What GAPP nursing does not cover</h2>
-      <p class="lh-body mt-4 measure">GAPP pays for skilled nursing and, in some cases, personal care support hours. It does not pay for housekeeping, babysitting, therapy sessions, medical equipment or care for other family members. Those come through other Medicaid benefits. If you need them, we’ll point you to the right place. [CONFIRM: whether Little Hearts offers personal care support under GAPP]</p>`,
+      <p class="lh-body mt-4 measure">GAPP pays for skilled nursing and, in some cases, personal care support hours. It does not pay for housekeeping, babysitting, therapy sessions, medical equipment or care for other family members. Those come through other Medicaid benefits. If you need them, we’ll point you to the right place.</p>`,
       { white: true, tight: true, label: 'What GAPP nursing does not cover' }),
   ].join('\n'),
 };

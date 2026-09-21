@@ -19,18 +19,11 @@ const heroSection = `<section class="hero" aria-label="Introduction">
   </div>
 </section>`;
 
-const ownersBand = `<section class="lh-band" aria-label="The owners">
+const ownersBand = `<section class="lh-band" aria-label="Owner operated">
   <div class="inner">
-    <h2 class="lh-band__title">Three owners. One phone call.</h2>
-    <p class="lh-band__lead">No call center. No rotating coordinator. Every family gets all three of us.</p>
-    <div class="grid-3 band-cards">
-      ${S.OWNERS.map(([name]) => `
-      <div class="lh-card lh-card--raised">
-        <h3 class="lh-h4">${name}</h3>
-        <p class="lh-small mt-2">[One line: what families call this owner about.]</p>
-      </div>`).join('')}
-    </div>
-    <p class="mt-6"><a class="lh-link lh-link--inverse" href="/about">Meet the owners</a></p>
+    <h2 class="lh-band__title">Owner operated. One phone call.</h2>
+    <p class="lh-band__lead">No call center. No rotating coordinator. When you call, you reach the people who run the agency.</p>
+    <p class="mt-6"><a class="lh-link lh-link--inverse" href="/about">How we run the agency</a></p>
   </div>
 </section>`;
 
@@ -60,7 +53,7 @@ const audienceSection = H.section(`<div class="grid-2">
     </ul>
     <div class="card-actions">
       ${H.btn('Send a referral', '/physicians/refer')}
-      ${H.link('Download the referral form (PDF) [CONFIRM: build]', '/physicians/refer')}
+      ${H.link('How referrals work', '/physicians/refer')}
     </div>
   </div>
   <div class="lh-card audience-card">
@@ -79,10 +72,12 @@ const audienceSection = H.section(`<div class="grid-2">
   </div>
 </div>`, { label: 'Referrers and nurses' });
 
+const COUNTIES = ['Appling','Atkinson','Bacon','Baker','Baldwin','Banks','Barrow','Bartow','Ben Hill','Berrien','Bibb','Bleckley','Brantley','Brooks','Bryan','Bulloch','Burke','Butts','Calhoun','Camden','Candler','Carroll','Catoosa','Charlton','Chatham','Chattahoochee','Chattooga','Cherokee','Clarke','Clay','Clayton','Clinch','Cobb','Coffee','Colquitt','Columbia','Cook','Coweta','Crawford','Crisp','Dade','Dawson','Decatur','DeKalb','Dodge','Dooly','Dougherty','Douglas','Early','Echols','Effingham','Elbert','Emanuel','Evans','Fannin','Fayette','Floyd','Forsyth','Franklin','Fulton','Gilmer','Glascock','Glynn','Gordon','Grady','Greene','Gwinnett','Habersham','Hall','Hancock','Haralson','Harris','Hart','Heard','Henry','Houston','Irwin','Jackson','Jasper','Jeff Davis','Jefferson','Jenkins','Johnson','Jones','Lamar','Lanier','Laurens','Lee','Liberty','Lincoln','Long','Lowndes','Lumpkin','Macon','Madison','Marion','McDuffie','McIntosh','Meriwether','Miller','Mitchell','Monroe','Montgomery','Morgan','Murray','Muscogee','Newton','Oconee','Oglethorpe','Paulding','Peach','Pickens','Pierce','Pike','Polk','Pulaski','Putnam','Quitman','Rabun','Randolph','Richmond','Rockdale','Schley','Screven','Seminole','Spalding','Stephens','Stewart','Sumter','Talbot','Taliaferro','Tattnall','Taylor','Telfair','Terrell','Thomas','Tift','Toombs','Towns','Treutlen','Troup','Turner','Twiggs','Union','Upson','Walker','Walton','Ware','Warren','Washington','Wayne','Webster','Wheeler','White','Whitfield','Wilcox','Wilkes','Wilkinson','Worth'];
+
 const serviceArea = H.section(
   H.sectionHead('', 'Where we work',
-    'We staff cases across metro Atlanta and take calls from anywhere in Georgia. If you’re outside the counties below, call anyway. We’ll tell you plainly if we can cover you.') +
-  `<p class="lh-body measure">[CONFIRM county list. Suggested starting list: Fulton, DeKalb, Cobb, Gwinnett, Clayton, Henry, Cherokee, Forsyth, Douglas, Fayette, Rockdale, Paulding, Coweta, Newton, Hall, Bartow, Carroll, Walton]</p>`,
+    'We take calls from families in every one of Georgia’s 159 counties. Call and we’ll tell you plainly how soon we can staff a case in your area.') +
+  `<ul class="county-list lh-small" aria-label="Georgia counties we serve">${COUNTIES.map((c) => `<li>${c}</li>`).join('')}</ul>`,
   { label: 'Service area' });
 
 // Families' words: dropped until real, released quotes exist (per home.md).

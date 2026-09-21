@@ -32,3 +32,8 @@ Issues found during the build and fixed before this report:
 ## Screenshots
 
 `docs/screenshots/`: Home at 1280 and 390, tracheostomy care, GAPP and eligibility, Refer a patient and Careers at 1280, plus the open desktop dropdown and the mobile menu panel.
+
+
+## Update: production-ready pass (2026-09-21)
+
+Owner-specific content removed pending owner input (named owner cards, story, direct lines), careers and clinical model made generic, PDF references and Spanish routes removed, all 159 Georgia counties listed on Home. 32 pages, 203 placeholders remaining (phone, fax, address, hours, license, legal drafts, PCS enrollment). Re-verified: axe-core 0 violations on all 35 routes, Lighthouse mobile Home 99/100/100/100, all internal links resolve.
