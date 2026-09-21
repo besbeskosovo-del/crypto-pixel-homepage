@@ -1,0 +1,26 @@
+:root{
+--font-heading:"Figtree", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+--font-text:"Atkinson Hyperlegible Next", "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+--measure:68ch;
+}
+.lh-display{font-family:var(--font-heading);font-size:60px;line-height:64px;font-weight:800;letter-spacing:-0.02em}
+.lh-h1{font-family:var(--font-heading);font-size:46px;line-height:52px;font-weight:700;letter-spacing:-0.015em}
+.lh-h2{font-family:var(--font-heading);font-size:36px;line-height:44px;font-weight:700;letter-spacing:-0.01em}
+.lh-h3{font-family:var(--font-heading);font-size:28px;line-height:36px;font-weight:700}
+.lh-h4{font-family:var(--font-heading);font-size:22px;line-height:30px;font-weight:700}
+.lh-button{font-family:var(--font-heading);font-size:19px;line-height:24px;font-weight:700}
+.lh-body-lg{font-family:var(--font-text);font-size:20px;line-height:32px;font-weight:400}
+.lh-body{font-family:var(--font-text);font-size:18px;line-height:28px;font-weight:400}
+.lh-small{font-family:var(--font-text);font-size:16px;line-height:24px;font-weight:400}
+.lh-caption{font-family:var(--font-text);font-size:14px;line-height:20px;font-weight:400;letter-spacing:0.01em}
+.lh-label{font-family:var(--font-text);font-size:14px;line-height:20px;font-weight:700;letter-spacing:0.06em}
+/* Mobile column of the type scale. Switch below 720px. */
+@media (max-width:720px){
+.lh-display{font-size:40px;line-height:44px}
+.lh-h1{font-size:34px;line-height:40px}
+.lh-h2{font-size:28px;line-height:34px}
+.lh-h3{font-size:24px;line-height:30px}
+.lh-h4{font-size:20px;line-height:28px}
+.lh-body-lg{font-size:19px;line-height:30px}
+.lh-body{font-size:16px;line-height:24px}
+}

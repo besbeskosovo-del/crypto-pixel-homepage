@@ -1,0 +1,11 @@
+{
+  "name": "littleheartshc-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Little Hearts Home Care (littleheartshc.com), built from the brand kit and copy deck.",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve dist",
+    "serve": "cd dist && python3 -m http.server 8080"
+  }
+}

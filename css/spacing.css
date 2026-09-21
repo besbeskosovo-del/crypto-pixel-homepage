@@ -1,0 +1,27 @@
+:root{
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:24px;
+--space-6:32px;
+--space-7:48px;
+--space-8:64px;
+--space-9:96px;
+
+--radius-sm:6px;
+--radius-md:12px;
+--radius-lg:20px;
+--radius-pill:999px;
+
+--shadow-card:0 1px 2px rgba(35, 74, 102, 0.08), 0 8px 24px rgba(35, 74, 102, 0.08);
+--shadow-raised:0 2px 4px rgba(35, 74, 102, 0.10), 0 16px 40px rgba(35, 74, 102, 0.12);
+
+--logo-stacked-min:160px;
+--logo-horizontal-min:240px;
+--mark-min:32px;
+--icon-md:56px;
+--icon-sm:32px;
+--tap-target:48px;
+--content-max:1200px;
+}

@@ -1,0 +1,26 @@
+/* Exact brand values. Never tinted, shaded or substituted. */
+:root{
+--coral:#F06280;
+--navy:#234A66;
+--sky:#5786B5;
+--bright-blue:#3F9CBF;
+--teal:#36AD9C;
+--violet:#7C68AE;
+--sunshine:#ECD267;
+--leaf-green:#69AA84;
+--off-white:#F5F5F5;
+--white:#FFFFFF;
+
+/* Semantic aliases: use these in product code. */
+--action:var(--coral);
+--on-action:var(--white);
+--ink:var(--navy);
+--surface-page:var(--off-white);
+--surface-card:var(--white);
+--surface-band:var(--sky);
+--surface-inverse:var(--navy);
+--focus-ring:var(--navy);
+--line:rgba(35, 74, 102, 0.16);
+--line-strong:rgba(35, 74, 102, 0.32);
+--line-inverse:rgba(255, 255, 255, 0.25);
+}
